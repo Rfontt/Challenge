@@ -46,7 +46,9 @@ Um exemplo disso é rota post ```http://localhost:8080/product/:user_id```, que 
 
 <img align= "center" src = "./imagensGitHub/multer.png" alt = "insomnia_multer"/>
 
+### OBS: 
 
+Para conseguir acessar as imagens clique na url dada no json da response e ele lhe enviará para o navegador que lhe permitirá visualizar ela.
 
 
 
