@@ -10,13 +10,14 @@ const UpdateFileController = require('../controllers/Product/updateFile');
 
 const multer = require('multer');
 const multerConfig = require('../middleware/multer');
+const Authorization = require('../middleware/authorization');
 
-Product.post("/product/:user_id", multer(multerConfig).single("file"), CreateProductController);
-Product.get("/product", FindAllProductController);
-Product.get("/product/:id", FindOneProductController);
-Product.put("/product/:id", UpdateNameAndValueController);
-Product.patch("/product/:id", multer(multerConfig).single("file"), UpdateFileController);
-Product.delete("/product/:id", DeleteProductController);
+Product.post("/product/:user_id", Authorization, multer(multerConfig).single("file"), CreateProductController);
+Product.get("/product", Authorization, FindAllProductController);
+Product.get("/product/:id", Authorization, FindOneProductController);
+Product.put("/product/:id", Authorization, UpdateNameAndValueController);
+Product.patch("/product/:id", Authorization, multer(multerConfig).single("file"), UpdateFileController);
+Product.delete("/product/:id", Authorization, DeleteProductController);
 
 
 module.exports = Product;
