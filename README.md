@@ -34,7 +34,7 @@ npm install multer our yarn add multer
 
 **Exemplo no insomnia:**
 
-<img align= "center" src = "./imagensGitHub/authorization.png" alt = "insomnia_authorization"/>
+<img align= "center" src = "./imagensGithub/authorization.png" alt = "insomnia_authorization"/>
 
 Repita isso para em todas as rotas que exigem privilégio de autenticação.
 
@@ -44,7 +44,7 @@ Um exemplo disso é rota post ```http://localhost:8080/product/:user_id```, que 
 
 **Exemplo:**
 
-<img align= "center" src = "./imagensGitHub/multer.png" alt = "insomnia_multer"/>
+<img align= "center" src = "./imagensGithub/multer.png" alt = "insomnia_multer"/>
 
 ### OBS: 
 
