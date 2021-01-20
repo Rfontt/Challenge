@@ -36,7 +36,7 @@ npm install multer our yarn add multer
 
 <img align= "center" src = "./imagensGithub/authorization.png" alt = "insomnia_authorization"/>
 
-Repita isso para em todas as rotas que exigem privilégio de autenticação.
+Repita isso em todas as rotas que exigem privilégio de autenticação.
 
 - Para usar o multer procure por **Multipart Form** e informe o que pede nas requisições.
 
