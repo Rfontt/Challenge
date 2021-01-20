@@ -22,7 +22,7 @@ npm install multer our yarn add multer
 
 - Insira os dados do seu banco local na pasta src/config/database.js ou em um arquivo de variável de ambiente(.env);
 
--Rode o comando:```yarn sequelize db:create``` para criar o banco de dados local;
+- Rode o comando:```yarn sequelize db:create``` para criar o banco de dados local;
 
 - Rode o comando: ```yarn sequelize db:migrate``` para migrar as tabelas para o banco de dados.
 
