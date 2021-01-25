@@ -7,6 +7,7 @@ const FindOneProductController = require('../controllers/Product/FindOne');
 const DeleteProductController = require('../controllers/Product/Delete');
 const UpdateNameAndValueController = require('../controllers/Product/update');
 const UpdateFileController = require('../controllers/Product/updateFile');
+const FilterProductController = require('../controllers/Product/filterProduct')
 
 const multer = require('multer');
 const multerConfig = require('../middleware/multer');
@@ -19,5 +20,6 @@ Product.put("/product/:id", Authorization, UpdateNameAndValueController);
 Product.patch("/product/:id", Authorization, multer(multerConfig).single("file"), UpdateFileController);
 Product.delete("/product/:id", Authorization, DeleteProductController);
 
+Product.get("/filter", FilterProductController);
 
 module.exports = Product;
