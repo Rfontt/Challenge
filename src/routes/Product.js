@@ -20,6 +20,8 @@ Product.put("/product/:id", Authorization, UpdateNameAndValueController);
 Product.patch("/product/:id", Authorization, multer(multerConfig).single("file"), UpdateFileController);
 Product.delete("/product/:id", Authorization, DeleteProductController);
 
-Product.get("/filter", FilterProductController);
+Product.get("/filter/value", FilterProductController.filterProductForValue);
+Product.get("/filter/name", FilterProductController.filterProductForName);
+
 
 module.exports = Product;
